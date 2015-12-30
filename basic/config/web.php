@@ -39,6 +39,11 @@ $config = [
         ],
         'db' => require(__DIR__ . '/db.php'),
     ],
+    'modules'=>[
+        'mymodule'=>[
+            'class'=>'app\modules\mymodule\Module',
+        ],
+    ],
     'controllerMap'=>[
         'account' => 'app\controllers\UsersController', // account类 相当于 users类 但是views中的的 account目录下的文件要和 users目录下的文件一样
     ],

@@ -3,9 +3,23 @@
 /* @var $this yii\web\View */
 
 $this->title = 'My Yii Application';
+$this->registerLinkTag([
+    'rel' => 'stylesheet',
+    'href' => '/yii2-sa/dada.css',
+]);
 ?>
-<div class="site-index">
+<?php $this->beginContent('@app/views/layouts/test.php'); ?>
 
+<?php $this->endContent(); ?>
+
+<?php $this->beginBlock('block1'); ?>
+
+block1的内容。。。。。。。。。。
+
+<?php $this->endBlock(); ?>
+
+<div class="site-index">
+    The controller ID is: <?= $this->context->id ?>
     <div class="jumbotron">
         <h1>Congratulations!</h1>
 
@@ -51,3 +65,4 @@ $this->title = 'My Yii Application';
 
     </div>
 </div>
+

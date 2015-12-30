@@ -56,6 +56,18 @@ AppAsset::register($this);
             'links' => isset($this->params['breadcrumbs']) ? $this->params['breadcrumbs'] : [],
         ]) ?>
         <?= $content ?>
+
+        <?php if (isset($this->blocks['block1'])): ?>
+            <?= $this->blocks['block1'] ?>
+        <?php else: ?>
+            block1数据块不存在
+        <?php endif; ?>
+
+        <?php if (isset($this->blocks['block2'])): ?>
+            <?= $this->blocks['block2'] ?>
+        <?php else: ?>
+          block2数据块不存在
+        <?php endif; ?>
     </div>
 </div>
 
