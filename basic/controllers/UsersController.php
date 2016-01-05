@@ -33,6 +33,7 @@ class UsersController extends Controller
     public function actionIndex()
     {
         $searchModel = new UsersSearch();
+        //Yii::$app->request->queryParams  获取get请求的参数 个人认为 等同于 Yii::$app->request->get()
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [

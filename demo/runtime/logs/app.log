@@ -1,0 +1,322 @@
+2016-01-04 17:18:44 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\components\HelloWidget' not found' in D:\wamp\www\yii2-basic-advanced\demo\views\layouts\test.php:4
+Stack trace:
+#0 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\widgets\ContentDecorator.php(77): yii\base\View->renderFile()
+#2 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Widget.php(73): yii\widgets\ContentDecorator->run()
+#3 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(433): yii\base\Widget::end()
+#4 D:\wamp\www\yii2-basic-advanced\demo\views\site\index.php(13): yii\base\View->endContent()
+#5 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(325): ::unknown()
+#6 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#7 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile()
+#8 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render()
+#9 D:\wamp\www\yii2-basic-advanced\demo\controllers\SiteController.php(53): yii\base\Controller->render()
+#10 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#11 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#12 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#13 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#14 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#15 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#16 D:\wamp\www\yii2-basic-advanced\demo\web\index.php(14): yii\base\Application->run()
+#17 {main}
+2016-01-04 17:18:43 [::1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '7289903104'
+    '_csrf' => 'b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YfyHqnHqm4TnuYIwVgaF8I41j5wVoms\";}'
+    'PHPSESSID' => '9kifpppaaiqaddtsskuneodad7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'pgv_pvi=7289903104; _csrf=b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YfyHqnHqm4TnuYIwVgaF8I41j5wVoms%22%3B%7D; PHPSESSID=9kifpppaaiqaddtsskuneodad7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/yii2-basic-advanced/demo/web/index.php'
+    'REMOTE_PORT' => '49593'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-basic-advanced/demo/web/index.php'
+    'SCRIPT_NAME' => '/yii2-basic-advanced/demo/web/index.php'
+    'PHP_SELF' => '/yii2-basic-advanced/demo/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451899123.908
+    'REQUEST_TIME' => 1451899123
+]
+2016-01-04 17:19:15 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'app\assets\AppAsset' not found' in D:\wamp\www\yii2-basic-advanced\demo\views\layouts\main.php:12
+Stack trace:
+#0 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile()
+#1 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile()
+#2 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent()
+#3 D:\wamp\www\yii2-basic-advanced\demo\controllers\SiteController.php(53): yii\base\Controller->render()
+#4 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): app\controllers\SiteController->actionIndex()
+#5 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#6 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams()
+#7 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction()
+#8 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction()
+#9 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#10 D:\wamp\www\yii2-basic-advanced\demo\web\index.php(14): yii\base\Application->run()
+#11 {main}
+2016-01-04 17:19:15 [::1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '7289903104'
+    '_csrf' => 'b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YfyHqnHqm4TnuYIwVgaF8I41j5wVoms\";}'
+    'PHPSESSID' => '9kifpppaaiqaddtsskuneodad7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'pgv_pvi=7289903104; _csrf=b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YfyHqnHqm4TnuYIwVgaF8I41j5wVoms%22%3B%7D; PHPSESSID=9kifpppaaiqaddtsskuneodad7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/yii2-basic-advanced/demo/web/index.php'
+    'REMOTE_PORT' => '49606'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-basic-advanced/demo/web/index.php'
+    'SCRIPT_NAME' => '/yii2-basic-advanced/demo/web/index.php'
+    'PHP_SELF' => '/yii2-basic-advanced/demo/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451899155.721
+    'REQUEST_TIME' => 1451899155
+]
+2016-01-04 17:19:33 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\wamp\www\yii2-basic-advanced\demo\vendor\bower/jquery/dist' in D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\wamp\\www\\yii...', Array)
+#1 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 D:\wamp\www\yii2-basic-advanced\demo\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(325): require('D:\\wamp\\www\\yii...')
+#9 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\wamp\\www\\yii...', Array)
+#10 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\wamp\\www\\yii...', Array, Object(app\controllers\SiteController))
+#11 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('\xE5\xB0\x8F\xE9\x83\xA8\xE4\xBB\xB6\xE5\x8A\xA0\xE8\xBD\xBD...')
+#12 D:\wamp\www\yii2-basic-advanced\demo\controllers\SiteController.php(53): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\wamp\www\yii2-basic-advanced\demo\web\index.php(14): yii\base\Application->run()
+#20 {main}
+2016-01-04 17:19:33 [::1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '7289903104'
+    '_csrf' => 'b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YfyHqnHqm4TnuYIwVgaF8I41j5wVoms\";}'
+    'PHPSESSID' => '9kifpppaaiqaddtsskuneodad7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'pgv_pvi=7289903104; _csrf=b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YfyHqnHqm4TnuYIwVgaF8I41j5wVoms%22%3B%7D; PHPSESSID=9kifpppaaiqaddtsskuneodad7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/yii2-basic-advanced/demo/web/index.php'
+    'REMOTE_PORT' => '49614'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-basic-advanced/demo/web/index.php'
+    'SCRIPT_NAME' => '/yii2-basic-advanced/demo/web/index.php'
+    'PHP_SELF' => '/yii2-basic-advanced/demo/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451899173.058
+    'REQUEST_TIME' => 1451899173
+]
+2016-01-04 17:25:37 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\wamp\www\yii2-basic-advanced\demo\vendor\bower/jquery/dist' in D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\wamp\\www\\yii...', Array)
+#1 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 D:\wamp\www\yii2-basic-advanced\demo\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(325): require('D:\\wamp\\www\\yii...')
+#9 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\wamp\\www\\yii...', Array)
+#10 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\wamp\\www\\yii...', Array, Object(app\controllers\SiteController))
+#11 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('\xE5\xB0\x8F\xE9\x83\xA8\xE4\xBB\xB6\xE5\x8A\xA0\xE8\xBD\xBD...')
+#12 D:\wamp\www\yii2-basic-advanced\demo\controllers\SiteController.php(53): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\wamp\www\yii2-basic-advanced\demo\web\index.php(14): yii\base\Application->run()
+#20 {main}
+2016-01-04 17:25:37 [::1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '7289903104'
+    '_csrf' => 'b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YfyHqnHqm4TnuYIwVgaF8I41j5wVoms\";}'
+    'PHPSESSID' => '9kifpppaaiqaddtsskuneodad7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'pgv_pvi=7289903104; _csrf=b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YfyHqnHqm4TnuYIwVgaF8I41j5wVoms%22%3B%7D; PHPSESSID=9kifpppaaiqaddtsskuneodad7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/yii2-basic-advanced/demo/web/index.php'
+    'REMOTE_PORT' => '49872'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-basic-advanced/demo/web/index.php'
+    'SCRIPT_NAME' => '/yii2-basic-advanced/demo/web/index.php'
+    'PHP_SELF' => '/yii2-basic-advanced/demo/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451899537.268
+    'REQUEST_TIME' => 1451899537
+]
+2016-01-04 17:25:38 [::1][-][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The file or directory to be published does not exist: D:\wamp\www\yii2-basic-advanced\demo\vendor\bower/jquery/dist' in D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php:452
+Stack trace:
+#0 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(163): yii\web\AssetManager->publish('D:\\wamp\\www\\yii...', Array)
+#1 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(266): yii\web\AssetBundle->publish(Object(yii\web\AssetManager))
+#2 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetManager.php(237): yii\web\AssetManager->loadBundle('yii\\web\\JqueryA...', Array, true)
+#3 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(284): yii\web\AssetManager->getBundle('yii\\web\\JqueryA...')
+#4 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\JqueryA...', NULL)
+#5 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\View.php(289): yii\web\View->registerAssetBundle('yii\\web\\YiiAsse...', NULL)
+#6 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\AssetBundle.php(119): yii\web\View->registerAssetBundle('app\\assets\\AppA...')
+#7 D:\wamp\www\yii2-basic-advanced\demo\views\layouts\main.php(12): yii\web\AssetBundle::register(Object(yii\web\View))
+#8 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(325): require('D:\\wamp\\www\\yii...')
+#9 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('D:\\wamp\\www\\yii...', Array)
+#10 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(386): yii\base\View->renderFile('D:\\wamp\\www\\yii...', Array, Object(app\controllers\SiteController))
+#11 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(372): yii\base\Controller->renderContent('\xE5\xB0\x8F\xE9\x83\xA8\xE4\xBB\xB6\xE5\x8A\xA0\xE8\xBD\xBD...')
+#12 D:\wamp\www\yii2-basic-advanced\demo\controllers\SiteController.php(53): yii\base\Controller->render('index')
+#13 [internal function]: app\controllers\SiteController->actionIndex()
+#14 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#15 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('', Array)
+#17 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('', Array)
+#18 D:\wamp\www\yii2-basic-advanced\demo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\wamp\www\yii2-basic-advanced\demo\web\index.php(14): yii\base\Application->run()
+#20 {main}
+2016-01-04 17:25:38 [::1][-][-][info][application] $_COOKIE = [
+    'pgv_pvi' => '7289903104'
+    '_csrf' => 'b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"4YfyHqnHqm4TnuYIwVgaF8I41j5wVoms\";}'
+    'PHPSESSID' => '9kifpppaaiqaddtsskuneodad7'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'localhost'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:43.0) Gecko/20100101 Firefox/43.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_COOKIE' => 'pgv_pvi=7289903104; _csrf=b1a49935ed15b9b5dd8267bcb24c2406fa988ad37ab6db8146a7dae7135ef1aea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%224YfyHqnHqm4TnuYIwVgaF8I41j5wVoms%22%3B%7D; PHPSESSID=9kifpppaaiqaddtsskuneodad7'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'PATH' => 'C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/'
+    'SERVER_ADMIN' => 'admin@example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/yii2-basic-advanced/demo/web/index.php'
+    'REMOTE_PORT' => '49873'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/yii2-basic-advanced/demo/web/index.php'
+    'SCRIPT_NAME' => '/yii2-basic-advanced/demo/web/index.php'
+    'PHP_SELF' => '/yii2-basic-advanced/demo/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1451899538.218
+    'REQUEST_TIME' => 1451899538
+]

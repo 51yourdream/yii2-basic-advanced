@@ -15,7 +15,7 @@ $this->registerLinkTag([
 <?php $this->beginBlock('block1'); ?>
 
 block1的内容。。。。。。。。。。
-
+<?php echo  Yii::getVersion();?>
 <?php $this->endBlock(); ?>
 
 <div class="site-index">

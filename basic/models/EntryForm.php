@@ -15,15 +15,18 @@ class EntryForm extends Model
 {
     public $name;
     public $email;
+    public $file;
+    public $items;
+    public $country;
     public $password; //密码
     public $password2; //确认密码
-    public function rules(){
+    public function rules(){ //在model中定义验证规则
         return [
             [['name','email'],'required','message'=>'不能为空'],
             ['name','required','message'=>'名称不能为空'],
             ['email','required','message'=>'邮箱不能为空'],
-//            ['password','required','message'=>'密码不能为空'],
-//            ['password2','compare','compareAttribute'=>'password','message'=>'两次密码不一致']
+            ['password','required','message'=>'密码不能为空'],
+            ['password2','compare','compareAttribute'=>'password','message'=>'两次密码不一致']
         ];
     }
 }

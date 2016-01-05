@@ -1,5 +1,5 @@
 <?php
-
+//专门做查询用的
 namespace app\models;
 
 use Yii;

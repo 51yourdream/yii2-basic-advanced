@@ -15,8 +15,8 @@ class Country extends ActiveRecord
 {
     //返回当前数据表的名字
     // 如果类名和数据表名不能直接对应，可以覆写 yii\db\ActiveRecord::tableName() 方法去显式指定相关表名。
-//    public function tableName() {
-//        //parent::tableName();
-//        return '{{user}}';//这样写可以省略前缀
-//    }
+    public static function tableName() {
+        //parent::tableName();
+        return 'country';//这样写可以省略前缀
+    }
 }
