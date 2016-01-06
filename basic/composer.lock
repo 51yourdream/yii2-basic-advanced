@@ -4,9 +4,52 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "e8e7d091dd0bd9f97bd480cfa2d38405",
-    "content-hash": "82845ba6d7954de12a0086c3955fed70",
+    "hash": "ded6b475c1929678ff4c303bebacf5aa",
+    "content-hash": "79922cddb988835da0f070fe63f05619",
     "packages": [
+        {
+            "name": "2amigos/yii2-date-picker-widget",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/2amigos/yii2-date-picker-widget.git",
+                "reference": "6696ae3798a2a95b7281686d3279c4d3b50d8183"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://packagist.phpcomposer.com/files/2amigos/yii2-date-picker-widget/6696ae3798a2a95b7281686d3279c4d3b50d8183.zip",
+                "reference": "6696ae3798a2a95b7281686d3279c4d3b50d8183",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dosamigos\\datepicker\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Ramirez",
+                    "email": "ramirez.cobos@gmail.com",
+                    "homepage": "http://www.ramirezcobos.com"
+                }
+            ],
+            "description": "Bootstrap DatePicker widget for Yii2.",
+            "keywords": [
+                "datepicker",
+                "extension",
+                "widget",
+                "yii"
+            ],
+            "time": "2014-04-03 15:47:15"
+        },
         {
             "name": "bower-asset/bootstrap",
             "version": "v3.3.5",
@@ -54,6 +97,35 @@
                 "mobile-first",
                 "responsive",
                 "web"
+            ]
+        },
+        {
+            "name": "bower-asset/bootstrap-datepicker",
+            "version": "v1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eternicode/bootstrap-datepicker.git",
+                "reference": "fc74bfa7bf5af6621442d9ac7412ce1b0d109e02"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eternicode/bootstrap-datepicker/zipball/fc74bfa7bf5af6621442d9ac7412ce1b0d109e02",
+                "reference": "fc74bfa7bf5af6621442d9ac7412ce1b0d109e02",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.7.1"
+            },
+            "type": "bower-asset-library",
+            "extra": {
+                "bower-asset-main": [
+                    "dist/css/bootstrap-datepicker3.css",
+                    "dist/js/bootstrap-datepicker.min.js"
+                ],
+                "bower-asset-ignore": []
+            },
+            "license": [
+                "Apache-2.0"
             ]
         },
         {

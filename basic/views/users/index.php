@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'email:email',
             'password',
             'create_time',
-            // 'user_type',
+
             // 'equipment_id',
             // 'login_time',
             // 'client_type',
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             [
                 'class' => 'yii\grid\ActionColumn', //yii\grid\ActionColumn 用于显示一些动作按钮，如每一行的更新、删除操作。
-                'controller'=>'My', //自定义控制器
+//                'controller'=>'My', //自定义控制器
                 'template'=>"{view}{update}{delete}", //查看修改删除按钮
                 'buttons'=>[
                     'view'=>function($url, $model, $key){
@@ -72,10 +72,25 @@ $this->params['breadcrumbs'][] = $this->title;
                 'footer'=>'注册时间',
                 'visible'=>true,
                 'content'=>function($model, $key, $index, $column){
+                    error_log(print_r($column,1));
                 return 'w121';
             },
             ],
-            // 'user_type',
+            [
+                'class' => 'yii\grid\DataColumn', //由于是默认类型，可以省略
+                'attribute'=>'user_type',
+                'label'=>'用户类型',
+                'value'=>function($data){
+                    switch($data->user_type){
+                        case 1:
+                            return 'a';
+                        break;
+                        case 2:
+                            return 'b';
+                        break;
+                    }
+                }
+            ],
             // 'equipment_id',
             // 'login_time',
             // 'client_type',
@@ -95,6 +110,11 @@ $this->params['breadcrumbs'][] = $this->title;
         ],
     ]); ?>
 </div>
+<?php
+    function myfun(){
+        return 1;
+    }
+?>
 <script>
 //    用户可点击复选框来选择网格中的一些行。被选择的行可通过调用下面的JavaScript代码来获得：
 
