@@ -50,17 +50,19 @@ $this->params['breadcrumbs'][] = $this->title;
                             return  date('Y-m-d H:i:s',$data->pay_time);// 如果是数组数据则为 $data['name'] ，例如，使用 SqlDataProvider 的情形。
                         }
                 },
-                'filterInputOptions'=>Html::addCssStyle('pay_time',['width','170px']),//这个设置不起作用
                 'attribute'=>'pay_time',
                 'filter'=> DatePicker::widget([
+                    'addon'=>'',
                     'language' => 'zh-CN',
-                    'name' => 'pay_time',
-                    'value' =>'',
+                    'name' => 'pay_time
+
+                    ',
+                    'value' =>Yii::$app->request->get('pay_time'),
                     'template' => '{addon}{input}',
                     'clientOptions' => [
                         'autoclose' => true,
                         'format' => 'yyyy-mm-dd'
-                    ]
+                    ],
                 ]),
             ],
             [

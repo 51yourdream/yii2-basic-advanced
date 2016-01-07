@@ -109,6 +109,7 @@ class GorderSearch extends Gorder
             ->andFilterWhere(['like', 'address', $this->address])
             ->andFilterWhere(['like', 'kxw_gorder.create_time', $this->create_time])
             ->andFilterWhere(['like','users.telephone',$this->getAttribute('users.telephone')])
+//            ->andFilterWhere(['>','pay_time',strtotime($this->getAttribute('pay_time'))])
             ->andFilterWhere(['like','users.create_time',$this->getAttribute('users.create_time')]);
         return $dataProvider;
     }
