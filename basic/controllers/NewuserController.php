@@ -7,8 +7,8 @@
  * Time: 13:47
  */
 namespace app\controllers;
+
 use app\models\newuser\Newuser;
-use app\models\Orders;
 use Yii;
 use app\models\newuser\NewuserSearch;
 use yii\filters\VerbFilter;
@@ -31,6 +31,7 @@ class NewuserController extends Controller
 
     public function actionIndex(){
         $newuserModel = new NewuserSearch();
+        $newuserModel->scenario="create";
         $dataProvider = $newuserModel->search(Yii::$app->request->queryParams);
         return $this->render('index',[
             'newuserModel'=>$newuserModel,
@@ -42,8 +43,9 @@ class NewuserController extends Controller
             'model'=>$this->findModel($id),
         ]);
     }
-    public function actionCreate(){
+    public function actionLogin(){
        $model = new Newuser();
+        $model->setScenario('create');
         if($model->load(Yii::$app->request->post()) && $model->save()){
             return $this->redirect(['view','id'=>$model->id]);
         }else{
@@ -52,11 +54,45 @@ class NewuserController extends Controller
            ]);
         }
     }
-    protected function findModel($id){
-        if(($model = Newuser::findOne($id)) !== null){
-            return $model;
+
+    public function actionUpdate($id){
+        $model = $this->findModel($id);
+        $model->setScenario('update');
+        if($model->load(Yii::$app->request->post()) && $model->save()){
+            $this->redirect(['view','id'=>$model->id]);
         }else{
-            throw new NotFoundHttpException('当前页不见了');
+            return $this->render('update',[
+                'model'=>$model
+            ]);
+        }
+    }
+
+    public function actionLogin1(){
+        $model = new Newuser();
+//        $model->scenario="create";
+        $data = Yii::$app->request->post('Newuser');
+//        error_log(print_r($data,1));
+        error_log(print_r($model::findByUsername($data['username'],$model::encryptPassword($data['password'])),1));
+        if($model->load(Yii::$app->request->post()) && $model::findByUsername($data['username'],$model::encryptPassword($data['password']))){
+            error_log(21132);
+            $_SESSION['usernews']=1;
+            $this->redirect(['site/index']);
+        }else{
+            return $this->render('login',[
+                'model'=>$model
+            ]);
+        }
+    }
+    public function actionDelete($id){
+        $this->findModel($id)->delete();
+        $this->redirect(['index']);
+    }
+    protected function findModel($id)
+    {
+        if (($model = Newuser::findOne($id)) !== null) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
         }
     }
     public static function userRole($role){
