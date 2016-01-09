@@ -65,4 +65,33 @@ block1的内容。。。。。。。。。。
 
     </div>
 </div>
+<?php
+    $header = Yii::$app->request->headers; //为 yii\web\Header\Collection 对象
+    //返回Accept header值
+    $accept = $header->get('Accept');
+    echo "<br/>";
+    echo $accept;
+    echo $header->get('host');
+    echo "<br/>";
+    var_dump($header);
 
+
+?>
+<div class="alert alert-info">
+    <div><label for="">代理商:</label><?=Yii::$app->request->userAgent;?></div>
+    <div><label for="">客户端主机:</label><?=Yii::$app->request->userHost;?></div>
+
+    <div><label for="">客户端主机:</label><?=Yii::$app->request->getUserHost();?></div>
+    <div><label for="">客户端主机:</label><?=Yii::$app->request->headers->get('host');?></div>
+    <div><label for="">客户端ip:</label><?=Yii::$app->request->getUserIP();?></div>
+    <div><label for="">客户端ip:</label><?=Yii::$app->request->userIP;?></div>
+</div>
+<div class="alert alert-success">
+    <?=Yii::$app->request->contentType;?>
+</div>
+<div class="alert alert-danger">
+    <?php var_dump(Yii::$app->request->acceptableContentTypes);?>
+</div>
+<?php
+Yii::$app->response->content = 'hello world!';
+?>

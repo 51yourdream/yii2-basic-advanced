@@ -68,4 +68,16 @@ class Newuser extends ActiveRecord
         return md5(trim($password));
     }
 
+    public function say_hello($event){
+        echo "你应该会看到:".$event->data.'<br>';
+        echo 'username : '.$event->username."<br/>";
+        echo 'datatime : '.$event->datatime."<br/>";
+        echo 'age : '.$event->age."<br/>";
+    }
+    public function say_hello1($event){
+        echo "你应该会看到:".$event->data.'<br>';
+    }
+    public static function say_goodbye($event){
+        echo "你应该会看到:".$event->data.'<br>';
+    }
 }

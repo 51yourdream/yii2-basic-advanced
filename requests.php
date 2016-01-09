@@ -32,3 +32,25 @@ if($request->isGet){/*请求是get*/}
 if($request->isPost){/*请求是post*/}
 if($request->isPut){/*请求是PUT*/}
 
+//========================================
+// yii\web\Request::headers 属性返回 yii\web\HeaderCollection 对象 该对象可以获取 HTTP信息
+$header = Yii::$app->request->headers;
+//返回 Accept header值
+$accept = $header->get('Accept');
+
+//请求组件也提供了 支持快速访问头常用方法
+Yii::$app->request->userAgent; //返回浏览器头
+Yii::$app->request->contentType; //返回Content-Type Content_Type 是请求体中的 MIME类型数据
+
+Yii::$app->request->acceptableContentTypes; // array  返回用户可接受的内容MIME类型。 返回的类型是按照他们的质量得分来排序的。得分最高的类型将被最先返回。
+
+Yii::$app->request->acceptableLanguages;//array 返回课接受的语言
+
+//获取客户端信息
+$userhost = Yii::$app->request->userHost;
+Yii::$app->request->getUserHost();
+Yii::$app->request->headers->get('host');
+Yii::$app->request->getUserIP();
+Yii::$app->request->userIP;
+
+
